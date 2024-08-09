@@ -6,7 +6,14 @@
 (function($){
 	$(document).ready(function(){
 	
-		$(".banner-image").backstretch('images/banner.jpg');
+		$(".banner-image").backstretch('images/math-background.jpeg');
+
+		// CTA Button
+		$(window).load(function(){
+			$('.cta-button').on( 'click', function() {
+				window.open("https://calendly.com/jackhilton2904/free-consultation", "_blank").focus()
+			});
+		})
 		
 		// Fixed header
 		//-----------------------------------------------
@@ -32,7 +39,7 @@
 		
 	   $('#quote-carousel').carousel({
 		 pause: true,
-		 interval: 4000,
+		 interval: 10000,
 	   });
 		//Scroll Spy
 		//-----------------------------------------------
